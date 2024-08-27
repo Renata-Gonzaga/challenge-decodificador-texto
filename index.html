@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header class="cabecalho__logotipo">
+        <img src="./assets/Frame 6.png" alt="Logo Alura">
+    </header>
+    <main class="texto__principal">
+        <section class="conteudo__primario" >
+            <textarea  class="cabecalho__texto" placeholder="Digite seu texto" name="textodeEntrada" id="textodeEntrada"></textarea>
+            <div class="informacao__texto">
+                <img class="imagem__exclamation" src=".//assets/bi_exclamation-circle-fill.png" alt="">
+                <h6 class="informacao__texto__ajustes"> Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            
+                <div class="botao__crip__descrip">
+                    <button class="botao__criptografar" onclick="criptografar()">Criptografar</button>       
+                    <button class="botao__descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+           
+        </section>
+        <section class="conteudo__secundario">
+            <textarea class="conteudo__secundario__textarea"  name="texto-cripto" id="texto-cripto"  style="display:none;">Teste textarea</textarea>
+            <img id="minhaImagem" class="imagem__secundaria" src="./assets/High quality products 1 1.png" alt="">
+            <!--<textarea placeholder="Digite um texto que você deseja criptografar ou descriptografar" name="textodeSaida" 
+            id="textodeSaida">Digite um texto que você deseja criptografar ou descriptografar</textarea>-->
+            <p class="conteudo__secundario__mensagem__primeira" style="display:none;">Nenhuma mensagem encontrada</p>
+            <p class="conteudo__secundario__mensagem__segunda" style="display:none;">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            
+            <button class="botao__copiar__copiar" onclick="copiarTexto()">Copiar</button>           
+            
+        </section>            
+    </main> 
+    <footer class="rodape">
+        <p>Desenvolvido por Renata Gonzaga</p>
+    </footer>  
+
+    <script src="script.js"></script>
+</body>
+</html>

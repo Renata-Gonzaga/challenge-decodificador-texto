@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+
+:root{
+    --fonte-primaria: 'Inter', sans-serif;    
+
+    --color-primaria: #F3F5FC;
+    --color-secundaria: #0A3871;
+    --color-terciaria: #D8DFE8;
+    --color-quaternaria: #343A40;
+    --color-quintaria: #495057;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    height: 100%;
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria); 
+    background-color: var(--color-primaria);
+    color: var(--color-primaria);      
+}
+
+.cabecalho__logotipo{    
+    margin-left: 130px;
+    margin-top: 20px;    
+    gap: 45px;  
+    
+    
+     /* Mantém a proporção original da imagem */
+}
+
+.texto__principal{
+    display: flex;
+        
+}
+
+
+.conteudo__primario{  
+    height: 100%;     
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1000px;
+    width: 500px;
+    height: 48px;  
+    margin-top: 100px;
+    margin-left: 270px;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box; 
+    margin-top: 50px;
+  
+}
+
+textarea{
+    width: 100%;
+    height: 722px;
+    border: none;
+    background-color: transparent;
+    color: var(--color-secundaria);
+    padding: 10px;
+    padding: 24px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    flex: 1;
+    margin-left: 110px;
+    
+}
+
+textarea::placeholder {
+    color: var(--color-secundaria);
+    font-family: var(--fonte-primaria); /* Estilo do texto do placeholder */
+}
+
+textarea:focus{
+    outline: none;
+    
+}
+
+.cabecalho__texto{
+    font-family: var(--fonte-primaria);
+    color: var(--color-secundaria);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;    
+    justify-content: center; 
+}
+
+.conteudo__secundario{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 450px;
+    max-width: 395px;    
+    padding: 20px;
+    box-sizing: border-box; /* Inclui o padding na largura total */    
+    width: 300px;
+    height: 960px;    
+    border-radius: 32px;   
+    flex-direction: column;    
+    background-color: white;    
+    background-size:  100%;    
+    gap: 16px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    padding: 10px;
+    margin-top: -50px;    
+}
+
+#texto-cripto {
+    display: none; /* Oculta o textarea inicialmente */
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    border: none;
+    background-color: transparent;
+    color: var(--color-secundaria);
+    padding: 24px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+.conteudo__secundario__textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 450px;
+    max-width: 395px;    
+    padding: 20px;
+    box-sizing: border-box; 
+    width: 300px;
+    height: 1000px;
+    border-radius: 32px;
+    background-size: 100%;
+    gap: 16px;
+    margin-right: 108px;
+    margin-bottom: 20px;    
+    border: none;
+    background-color: transparent;
+    color: var(--color-secundaria);
+    padding: 24px;
+}
+
+.conteudo__secundario__textarea::placeholder {
+    color: var(--color-secundaria);
+    font-family: var(--fonte-primaria); /* Estilo do texto do placeholder */
+}
+
+.conteudo__secundario__textarea:focus {
+    outline: none;
+}
+
+
+.conteudo__primario, .conteudo__secundario{
+    flex: 1;     
+    padding: 20px;   
+}
+
+.imagem__secundaria{
+    margin-top: 180px;
+    width: 336px;
+    height: 300px;   
+}
+
+.conteudo__secundario__mensagem__primeira{
+    width: 336px;
+    height: 58px;
+    font-family: var(--fonte-primaria);      
+    color: var(--color-secundaria); 
+    font-weight: 700;
+    font-size: 25px; 
+    line-height: 28.8px;
+    text-align: center; 
+    color: var(--color-quaternaria);
+    margin-top:-40px; 
+    margin-bottom: 20px; 
+
+}
+
+.conteudo__secundario__mensagem__segunda{
+    width: 336px;
+    height: 58px;
+    font-family: var(--fonte-primaria);      
+    color: var(--color-secundaria); 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-quintaria);
+    margin-top: -110px;   
+    margin-bottom: 15px;  
+}
+
+.botao__copiar__copiar{
+    background-color: var(--color-terciaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-secundaria);
+    border-radius: 24px;
+    padding: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;    
+    width: 350px; 
+    gap: 16px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.botao__copiar__copiar:hover {
+    background-color: var(--color-secundaria);
+    color: var(--color-primaria);
+}
+
+
+.informacao__texto{    
+    display: flex;
+    font-family: var(--fonte-primaria);
+    color: var(--color-quintaria);        
+    gap: 8px;    
+    margin-bottom: 99px;    
+}
+
+.imagem__exclamation{    
+    width: 16px;
+    height: 16px;
+    margin-left: 110px;       
+}
+
+
+.botao__crip__descrip {
+    display: flex;
+    gap: 6px;
+    margin-top: -8px;
+    margin-left: 8px;
+}
+
+.botao__criptografar, .botao__descriptografar {    
+    flex: 1;
+    padding: 24px;
+    border-radius: 24px;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 0 0px;
+    box-sizing: border-box;
+    max-width: 350px;
+    margin-left: 100px;
+    margin-top: -70px;  
+    
+}
+
+.botao__criptografar {
+    transition: background-color 0.3s ease;
+    background-color: var(--color-secundaria);
+    color: var(--color-primaria);
+    
+}
+
+.botao__descriptografar {
+    transition: background-color 0.3s ease;
+    background-color: var(--color-terciaria);
+    color: var(--color-secundaria);
+    border: 1px solid var(--color-secundaria);
+}
+
+.rodape{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    color: var(--color-primaria);
+    background-color: #0A3871;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Media queries para responsividade */
+
+@media (max-width: 1416px) {
+    .cabecalho__logotipo {
+        margin-left: 0;
+    }
+
+    .conteudo__primario, .conteudo__secundario {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conteudo__secundario, .conteudo__secundario__textarea {
+        max-width: 100%;
+    }
+
+    textarea {
+        margin-left: 0;
+    }
+
+    .botao__criptografar, .botao__descriptografar {
+        margin-left: 0;
+    }
+
+    .imagem__secundaria {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 824px) {
+    .cabecalho__texto {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .conteudo__secundario__mensagem__primeira {
+        font-size: 20px;
+    }
+
+    .conteudo__secundario__mensagem__segunda {
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    .botao__criptografar, .botao__descriptografar, .botao__copiar__copiar {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
